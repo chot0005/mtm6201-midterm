@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Midterm Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- skip links for accessibility -->
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to main nav</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+        </ul>
+        <!-- site header -->
+        <header class="header" role="banner">
+            <div class="header-row wrapper">
+                <div class="header-images">
+                    <a href="#" class="header-logo" aria-label="website logo">
+                        <img src="images/logo.png" alt="Website Logo">
+                    </a>
+                </div>
+                <!-- navigation -->
+                <nav class="main-nav" role="navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" aria-label="homepage">Home</a></li>
+                        <li><a href="product.html" class="current" aria-label="product page">Product</a></li>
+                        <li><a href="faq.html" aria-label="faq page">FAQ</a></li>
+                        <li><a href="contact.html" aria-label="contact page">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-wrap wrapper">
+                <div class="header-section">
+                    <h3 class="header-title">Food app</h3>
+                    <p class="header-subtitle">Why stay hungry when you can order form Bella Onojie</p>
+                    <h4 class="header-text">Download the bella onoje&apos;s food app now on</h4>
+                    <div class="header-buttons">
+                        <button class="header-playstore" aria-label="download on playstore">Playstore</button>
+                        <button class="header-appstore" aria-label="download on app store">App store</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- site main -->
+        <main class="main wrapper" role="main">
+            <h1 class="product-title" role="heading">Our Products</h1>
+            <p class="product-text">Shop for your favorite meals or drinks and enjoy while doing it.</p>
+            <div class="product-cards">
+                <section class="product-card">
+                    <picture>
+                        <source srcset="images/product-pasta-960_x_640.jpg 1x,
+                        images/product-pasta-1920_x_1280.jpg 2x" media="(max-width: 959px)" />
+                        <source srcset="images/product-pasta-480_x_320.jpg 1x,
+                        images/product-pasta-960_x_640.jpg 2x" media="(min-width: 960px)" />
+                        <img src="images/product-pasta-original.jpg" alt="Pasta" />
+                    </picture>
+
+                    <div class="add-to-cart">
+                        <i class="online-add"></i>
+                        <span>Add to Cart</span></div>
+                    <div class="product-info">
+                        <h3>Pasta</h3>
+                        <p>Indulge in hearty pasta dishes with a choice of sauces such as marinara, alfredo, pesto, or
+                            bolognese. Add-ons like meatballs, grilled chicken, shrimp, or vegetables can be included.
+                        </p>
+                        <div class="price">
+                            <s>$24.00</s>$19.99
+                        </div>
+                    </div><a href="#"></a>
+                </section>
+                <section class="product-card hover">
+                    <picture>
+                        <source srcset="images/product-salad-960_x_716.jpg 1x,
+                        images/product-salad-1920_x_1432.jpg 2x" media="(max-width: 959px)" />
+                        <source srcset="images/product-salad-480_x_358.jpg 1x,
+                        images/product-salad-960_x_716.jpg 2x" media="(min-width: 960px)" />
+                        <img src="images/product-salad-original.jpg" alt="Salad" />
+                    </picture>
+                    <div class="add-to-cart">
+                        <i class="online-add"></i>
+                        <span>Add to Cart</span></div>
+                    <div class="product-info">
+                        <h3>Salads</h3>
+                        <p>Customize your salad with options like mixed greens, tomatoes, bell
+                            peppers, avocado, grilled chicken, shrimp. Choose from a selection of
+                            dressings such as balsamic vinaigrette, or Caesar.</p>
+                        <div class="price">
+                            <s>$22.00</s>$18.99
+                        </div>
+                    </div><a href="#"></a>
+                </section>
+                <section class="product-card">
+                    <picture>
+                        <source srcset="images/product-sushi-960_x_640.jpg 1x,
+                    images/product-sushi-1920_x_1280.jpg 2x" media="(max-width: 959px)" />
+                    <source srcset="images/product-sushi-480_x_320.jpg 1x,
+                    images/product-sushi-960_x_640.jpg 2x" media="(min-width: 960px)" />
+                        <img src="images/product-sushi-original.jpg" alt="Sushi" />
+                    </picture>
+                    <div class="add-to-cart">
+                        <i class="online-add"></i>
+                        <span>Add to Cart</span></div>
+                    <div class="product-info">
+                        <h3>Sushi</h3>
+                        <p>Order a variety of sushi rolls, sashimi, and nigiri featuring fresh fish like tuna, salmon,
+                            yellowtail, avocado, grilled chicken, and shrimp. Vegetarian options and specialty rolls are also available.</p>
+                        <div class="price">
+                            <s>$19.00</s>$17.99
+                        </div>
+                    </div><a href="#"></a>
+                </section>
+            </div>
+        </main>
+
+        <!-- site footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                <div class="footer-row">
+                    <div class="footer-logo">
+                        <a href="#" aria-label="website logo">
+                            <img src="images/logo.png" alt="Footer Logo">
+                        </a>
+                    </div>
+                    <!-- footer social media icons -->
+                    <div class="footer-icons">
+                        <a href="#" aria-label="twitter icon">
+                            <img src="images/icon-twitter.svg" alt="Twitter Icon">
+                        </a>
+                        <a href="#" aria-label="facebook icon">
+                            <img src="images/icon-facebook.svg" alt="Facebook Icon">
+                        </a>
+                        <a href="#" aria-label="instagram icon">
+                            <img src="images/icon-instagram.svg" alt="Instagram Icon">
+                        </a>
+                    </div>
+                    <!-- footer information and back to top link -->
+                    <div class="footer-info">
+                        <p>&copy; Copyright 2024 All rights reserved.</p>
+                        <a href="#top" aria-label="back to the top">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
