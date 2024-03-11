@@ -62,13 +62,16 @@ li {
     color: inherit;
 }
 
-/* define custom color variables */
+/* define custom color and font size variables */
 :root {
     --first-color: #252B42;
     --second-color: #FA4A0C;
     --third-color: #737373;
     --fourth-color: #E4E4E4;
     --fifth-color: #000000;
+    --large-size: 2.5rem;
+    --medium-size: 2rem;
+    --small-size: 1.5rem;
 }
 
 /* container for page content */
@@ -98,7 +101,7 @@ li {
 }
 
 .wrapper {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -112,10 +115,11 @@ li {
 /* navigation */
 .nav-list {
     color: var(--first-color);
-    font-size: 1.5em;
+    font-size: var(--small-size);
     font-weight: 600;
     line-height: 28px;
     padding: 10px;
+    /* add smooth transition */
     transition: all 0.1s ease-in-out;
     background-color: white;
     border: none;
@@ -149,12 +153,12 @@ li {
 
 .header-title {
     color: var(--first-color);
-    font-size: 1.5em;
+    font-size: var(--small-size);
     text-align: center;
 }
 
 .header-subtitle {
-    font-size: 2.5em;
+    font-size: var(--large-size);
     font-weight: 700;
     color: var(--first-color);
     line-height: 50px;
@@ -165,7 +169,7 @@ li {
 .header-text {
     color: var(--third-color);
     text-align: center;
-    font-size: 24px;
+    font-size: var(--medium-size);
     font-weight: 500;
     line-height: 38px;
     padding: 5px 20px 40px 20px;
@@ -181,10 +185,10 @@ li {
 
 .header-playstore {
     background-color: var(--second-color);
-    border-radius: 30px;
+    border-radius: 50px;
     margin: 0;
     padding: 0.5em 1.5em;
-    font-size: 24px;
+    font-size: var(--medium-size);
     font-weight: 700;
     transition: all 0.2s ease-in-out;
 }
@@ -198,12 +202,12 @@ li {
 
 .header-appstore {
     background-color: transparent;
-    border-radius: 30px;
+    border-radius: 50px;
     color: var(--second-color);
     border: 1px solid var(--second-color);
     margin: 0;
     padding: 0.5em 1.5em;
-    font-size: 24px;
+    font-size: var(--medium-size);
     font-weight: 700;
     transition: all 0.2s ease-in-out;
 }
@@ -265,7 +269,7 @@ li {
 
 .login-main {
     color: var(--fifth-color);
-    font-size: 2em;
+    font-size: var(--medium-size);
     font-weight: 600;
     line-height: 36px;
     letter-spacing: 0.1px;
@@ -281,14 +285,14 @@ li {
 
 .login-title {
     color: var(--second-color);
-    font-size: 2em;
+    font-size: var(--medium-size);
     font-weight: 700;
     padding: 1em 0;
 }
 
 .login-subtitle {
     color: var(--first-color);
-    font-size: 2.5em;
+    font-size: var(--large-size);
     font-weight: 700;
     line-height: 57px;
     padding: 10px 0;
@@ -296,7 +300,7 @@ li {
 
 .login-text {
     color: var(--third-color);
-    font-size: 1.5em;
+    font-size: var(--medium-size);
     font-weight: 500;
     line-height: 38px;
 }
@@ -316,14 +320,14 @@ li {
 
 .explore-title {
     color: var(--second-color);
-    font-size: 2em;
+    font-size: var(--medium-size);
     font-weight: 700;
     padding: 1em 0;
 }
 
 .explore-subtitle {
     color: var(--first-color);
-    font-size: 2.5em;
+    font-size: var(--large-size);
     font-weight: 700;
     line-height: 57px;
     padding: 10px 0;
@@ -331,7 +335,7 @@ li {
 
 .explore-text {
     color: var(--third-color);
-    font-size: 1.5em;
+    font-size: var(--medium-size);
     font-weight: 500;
     line-height: 38px;
 }
@@ -365,14 +369,14 @@ li {
 
 .checkout-title {
     color: var(--second-color);
-    font-size: 2em;
+    font-size: var(--medium-size);
     font-weight: 700;
     padding: 1em 0;
 }
 
 .checkout-subtitle {
     color: var(--first-color);
-    font-size: 2.5em;
+    font-size: var(--large-size);
     font-weight: 700;
     line-height: 57px;
     padding: 10px 0;
@@ -382,7 +386,7 @@ li {
 .checkout-text {
     width: 460px;
     color: var(--third-color);
-    font-size: 1.5em;
+    font-size: var(--medium-size);
     font-weight: 500;
     line-height: 38px;
     text-align: center;
@@ -405,7 +409,7 @@ li {
 .download-title {
     color: var(--fourth-color);
     text-align: center;
-    font-size: 30px;
+    font-size: var(--large-size);
     font-weight: 700;
     margin-bottom: 1em;
 }
@@ -413,7 +417,7 @@ li {
 .download-subtitle {
     color: var(--fourth-color);
     text-align: center;
-    font-size: 20px;
+    font-size: var(--medium-size);
     line-height: 1.5em;
 }
 
@@ -431,7 +435,7 @@ li {
     margin: 0;
     padding: 0.5em 2em;
     color: var(--fourth-color);
-    font-size: 1.5em;
+    font-size: var(--small-size);
     font-weight: 700;
     transition: all 0.2s ease-in-out;
 }
@@ -463,13 +467,13 @@ li {
 /********** product page **********/
 .product-title {
     color: var(--second-color);
-    font-size: 2.5em;
+    font-size: var(--large-size);
     font-weight: 700;
     margin: 1.5em 0;
 }
 
 .product-text {
-    font-size: 2em;
+    font-size: var(--medium-size);
     margin-bottom: 1.5em;
 }
 
@@ -488,11 +492,12 @@ li {
     min-width: 200px;
     max-width: 800px;
     width: 100%;
+    color: var(--first-color);
     background: var(--fourth-color);
     text-align: left;
-    color: var(--first-color);
+    border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-    font-size: 1.5em;
+    font-size: var(--small-size);
     transform: translateZ(0);
     perspective: 20em;
 }
@@ -552,7 +557,7 @@ li {
 }
 
 .product-card h3 {
-    font-size: 1.5em;
+    font-size: var(--small-size);
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -566,7 +571,7 @@ li {
 .product-card .price {
     flex-grow: 1;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: var(--small-size);
     line-height: 48px;
     letter-spacing: 1px;
 }
@@ -601,7 +606,7 @@ li {
 /********** faq page **********/
 .faq h2 {
     color: var(--second-color);
-    font-size: 2em;
+    font-size: var(--medium-size);
     font-weight: 700;
     margin-top: 2em;
     padding: 1em 0;
@@ -610,14 +615,14 @@ li {
 .faq p {
     color: var(--first-color);
     background-color: var(--fourth-color);
-    font-size: 2em;
+    font-size: var(--medium-size);
     font-weight: 700;
     padding: 1em 0.5em;
 }
 
 .faq article {
     color: var(--first-color);
-    font-size: 1.5em;
+    font-size: var(--small-size);
     line-height: 57px;
     padding: 10px 0;
     border-bottom: 2px solid var(--fourth-color);
@@ -628,7 +633,7 @@ li {
 }
 
 .name-wrapper h1 {
-    font-size: 2.5em;
+    font-size: var(--large-size);
     color: var(--first-color);
     text-transform: uppercase;
     line-height: 1em;
@@ -637,7 +642,7 @@ li {
 
 .name-wrapper h2 {
     color: var(--second-color);
-    font-size: 2.5em;
+    font-size: var(--large-size);
     font-weight: 700;
     line-height: 57px;
     padding: 50px 0;
@@ -653,14 +658,14 @@ li {
 }
 
 .list-titles dt {
-    font-size: 1.5em;
+    font-size: var(--small-size);
     font-weight: 600;
     color: var(--first-color);
 }
 
 .list-titles dd {
     text-align: left;
-    font-size: 1.5em;
+    font-size: var(--small-size);
     margin-bottom: 2em;
 }
 
@@ -736,14 +741,14 @@ svg {
 /* form section */
 .contact h1 {
     color: var(--second-color);
-    font-size: 2em;
+    font-size: var(--medium-size);
     font-weight: 700;
     padding: 1.5em 0;
 }
 
 .contact p {
     color: var(--third-color);
-    font-size: 1.5em;
+    font-size: var(--small-size);
     font-weight: 500;
     line-height: 38px;
 }
@@ -759,7 +764,7 @@ form {
 label {
     color: var(--third-color);
     margin: 16px 0 6px;
-    font-size: 1.5em;
+    font-size: var(--small-size);
     letter-spacing: 1px;
 
 }
@@ -788,7 +793,7 @@ button {
     margin: 3em auto;
     border-radius: 30px;
     border: none;
-    font-size: 1.5em;
+    font-size: var(--small-size);
     color: var(--fourth-color);
     background: var(--second-color);
     cursor: pointer;
@@ -840,7 +845,7 @@ button {
         flex-direction: row;
         align-items: center;
         gap: 2em;
-        font-size: 1.5em;
+        font-size: var(--small-size);
         margin-right: 1em;
     }
 
@@ -855,6 +860,7 @@ button {
     
     .header-wrap {
         background: gray url(../images/banner.png) no-repeat center;
+        /* responsive image */
         /* background-image: image-set("banner-480_x_206.png" 1x, "banner-960_x_412.png" 2x); */
         background-size: cover;
     }
@@ -869,7 +875,7 @@ button {
 
     .header-title {
         color: var(--fourth-color);
-        font-size: 24px;
+        font-size: var(--medium-size);
         font-weight: 700;
         line-height: 36px;
         letter-spacing: 0.1px;
@@ -979,6 +985,7 @@ button {
     /* download section */
     .download {
         background: gray url(../images/download-section.png) no-repeat;
+        /* responsive image */
         /* background-image: image-set("download-section-480_x_170.png" 1x, "download-section-960_x_340.png" 2x); */
         background-size: cover;
     }
@@ -1012,6 +1019,7 @@ button {
     }
 
     /********** product page **********/
+    /* style product cards by using grid */
     .product-cards {
         width: 100%;
         display: grid;
