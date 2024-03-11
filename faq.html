@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Midterm Project</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- skip links for accessibility -->
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to main nav</a></li>
+            <li><a href="#main">Skip to main content</a></li>
+        </ul>
+        <!-- site header -->
+        <header class="header" role="banner">
+            <div class="header-row wrapper">
+                <div class="header-images">
+                    <a href="#" class="header-logo" aria-label="website logo">
+                        <img src="images/logo.png" alt="Website Logo">
+                    </a>
+                </div>
+                <!-- navigation -->
+                <nav class="main-nav" role="navigation">
+                    <ul class="nav-list">
+                        <li><a href="index.html" aria-label="homepage">Home</a></li>
+                        <li><a href="product.html" aria-label="product page">Product</a></li>
+                        <li><a href="faq.html" class="current" aria-label="faq page">FAQ</a></li>
+                        <li><a href="contact.html" aria-label="contact page">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- header titles and description -->
+            <div class="header-wrap wrapper">
+                <div class="header-section">
+                    <h3 class="header-title">Food app</h3>
+                    <p class="header-subtitle">Why stay hungry when you can order form Bella Onojie</p>
+                    <h4 class="header-text">Download the bella onoje&apos;s food app now on</h4>
+                    <div class="header-buttons">
+                        <button class="header-playstore" aria-label="download on playstore">Playstore</button>
+                        <button class="header-appstore" aria-label="download on app store">App store</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- site main -->
+        <main class="main wrapper" role="main">
+            <div class="faq wrapper">
+                <!-- faq questions and answers -->
+                <div>
+                    <h2>FAQ (Frequently Asked Questions)</h2>
+                    <p>1. How can I create an account on your website?</p>
+                    <article role="article">
+                        To create an account, click on the "Sign Up" or "Register" button located at the top right
+                        corner of the homepage. You'll be prompted to provide your personal information such as your
+                        name, email address, phone number, and create a password. Once you've filled in the required
+                        details, click on "Sign Up" to complete the registration process.
+                    </article>
+                </div>
+                <div>
+                    <p>2. Is my personal information safe with your website?</p>
+                    <article role="article">
+                        Yes, we take the security and privacy of your personal information seriously. Your data is
+                        encrypted using industry-standard encryption protocols to ensure its safety during transmission
+                        and storage. We do not share your information with third parties without your consent. For more
+                        details, please refer to our Privacy Policy.
+                    </article>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="name-wrapper" itemscope itemtype="https://schema.org/Person">
+                    <h2>Contact Information</h2>
+                    <h1 itemprop="name">Nichada <br/>Chotapisitkul</h1>
+                </div>
+                <!-- contact information -->
+                <div class="contact-info">
+                    <dl class="list-titles" itemscope itemtype="https://schema.org/Person">
+                        <!-- contact details -->
+                        <dt>Job Title</dt>
+                        <dd itemprop="jobTitle">CEO and Founder</dd>
+                        <dt>Telephone</dt>
+                        <dd itemprop="telephone">+1 613 456 789</dd>
+                        <dt>Email</dt>
+                        <dd itemprop="email">c.nichada@gmail.com</dd>
+                        <dt>Address</dt>
+                        <dd itemprop="address">Ottawa, ON</dd>
+                    </dl>
+                </div>
+            </div>
+        </main>
+
+        <!-- site footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="wrapper">
+                <div class="footer-row">
+                    <div class="footer-logo">
+                        <a href="#" aria-label="website logo">
+                            <img src="images/logo.png" alt="Footer Logo">
+                        </a>
+                    </div>
+                    <!-- footer social media icons -->
+                    <div class="footer-icons">
+                        <a href="#" aria-label="twitter icon">
+                            <img src="images/icon-twitter.svg" alt="Twitter Icon">
+                        </a>
+                        <a href="#" aria-label="facebook icon">
+                            <img src="images/icon-facebook.svg" alt="Facebook Icon">
+                        </a>
+                        <a href="#" aria-label="instagram icon">
+                            <img src="images/icon-instagram.svg" alt="Instagram Icon">
+                        </a>
+                    </div>
+                    <!-- footer information and back to top link -->
+                    <div class="footer-info">
+                        <p>&copy; Copyright 2024 All rights reserved.</p>
+                        <a href="#top" aria-label="back to the top">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
